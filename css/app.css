@@ -1,0 +1,149 @@
+body{
+	background: url(../img/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* home */
+.home-wrapper{
+    text-align: center;
+	width:90%;
+	margin:10px auto;
+	background-color: rgba(0,0,0,.5);
+	transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
+    padding:10px;
+}
+.home-logo{
+	margin: 10px auto 10px auto;
+	height: 50px;
+	width: 50px;
+	background-image: url('../img/logo.png');
+	border:none;
+}
+.home-logo:after{ 
+	content:"Breath Easy";
+	display:block;
+	color:#fff;
+	margin:20px 0 0 60px;
+	font-weight: 700;
+	font-size:1.75em;
+	line-height: 1em
+}
+
+.home-divider{
+	border:1px solid rgba(240, 240, 240, 0.14);
+	width:80%;
+	margin:10px 10%;
+}
+
+.head-subcontent{
+	color: rgba(245, 245, 245, 0.8);
+	font-size: 3.5em;
+	font-weight: 100;
+	line-height: 1.2em;
+	padding: 0;
+	text-align: center;
+	border: none;
+
+}
+
+.head-maincopy{
+	color: #fff;
+	font-size: 2.75em;
+	line-height: 1.2em;
+	padding: 0;
+	text-align: center;
+	border: none;
+	text-transform: uppercase;
+	font-weight:700;
+	letter-spacing: -.01;
+
+}
+
+a.home-go{
+	font-size: 2.75em;
+	letter-spacing: -1px;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px; 
+	background-color: rgba(245, 245, 245, 0.8);
+	padding:20px 0 0 0;
+	color: rgba(0, 0, 0, 0.8);
+	display:inline-block;
+	Box-sizing: Border-box;
+	margin-top:20px;
+}
+/*end home*/
+
+
+/* content */
+.content-wrapper{
+	border-radius: 5px;
+	width:90%;
+	margin:60px auto 10px auto;
+	background-color: rgba(0,0,0,.5);
+	transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
+    padding:10px;
+}
+
+/* end content */
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.home-wrapper{
+		width:80%;
+		margin-top: 100px;
+	}
+
+	.home-logo{
+	margin: 10px auto 10px auto;
+	height: 50px;
+	width: 450px;
+	background-image: url('../img/wordmark.png');
+	border:none;
+	}
+	.home-logo:after{ 
+		content:" ";
+
+	}
+
+	#mapDiv{
+		height:450px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.home-wrapper{
+		width:70%;
+		margin-top: 200px;
+	}
+	#mapDiv{
+		height:650px;
+	}
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.home-wrapper{
+		width:60%;
+		margin-top: 300px;
+	}
+	#mapDiv{
+		height:750px;
+	}
+ }
